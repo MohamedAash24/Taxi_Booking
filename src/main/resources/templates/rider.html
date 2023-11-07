@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Sidebar 01</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap.css" />
+</head>
+<body>
+
+<div class="wrapper d-flex align-items-stretch">
+    <nav id="sidebar">
+        <div class="p-4 pt-5">
+            <a href="#" class="img logo rounded-circle mb-4 logo1">
+                <!--                    <img src="/static/images/logo.jpg" class="img-pri">-->
+            </a>
+            <ul class="list-unstyled components mb-5">
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+
+            <div class="footer">
+                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    <!--						  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a  target="_blank"></a>-->
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content" class="p-4 p-md-5">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+
+                <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                    <i class="fa fa-bars"></i>
+                    <span class="sr-only">Toggle Menu</span>
+                </button>
+                <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <h2 class="mb-4">Taxi Booking</h2>
+
+        <!--        home-->
+<!--        <div class="sales-boxes mt-4">-->
+<!--            <div class="recent-sales">-->
+                <div class="row">
+                    <table class="table">
+                        <span class="fs-5 fw-bold mb-2" style="margin-left: -15px">Drivers</span>
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Driver Details</th>
+                            <th>Contact Details</th>
+                            <th>Vehicle Details</th>
+                            <th>Package</th>
+                            <th>Account</th>
+                            <th>Option</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <span>Driver ID : <span>ID234</span> </span><br/>
+                                <span>Username : <span>driver1</span> </span><br/>
+                                <span>Name : <span>driver1</span> </span><br/>
+                                <span>Gender : <span>male</span> </span><br/>
+                                <span>NIC : <span>773121418v</span> </span><br/>
+                                <span>NIC : <span>773121418v</span> </span><br/>
+                                <span>Registered Date : <span>2022-10-17</span> </span><br/>
+                                <span>Registered Time : <span>11:05:25 am</span> </span><br/>
+                            </td>
+                            <td>
+                                <span>Contact : <span>077 111 2222</span> </span><br/>
+                                <span>Emergency : <span>077 111 2222</span> </span><br/>
+                                <span>Email : <span>driver1@gmail.com</span> </span><br/>
+                                <span>Address : <span>No 21/2, colombo 5.</span> </span><br/>
+                            </td>
+                            <td>
+                                <span>Vehicle Type : <span>car</span> </span><br/>
+                                <span>Plate No : <span>KC-1212</span> </span><br/>
+                                <span>Color : <span>Red</span> </span><br/>
+                                <span>Manufacture Year : <span>2015</span> </span><br/>
+                            </td>
+                            <td>
+                                <span>Vehicle Type : <span>car</span> </span><br/>
+                                <span>Passengers : <span>4</span> </span><br/>
+                                <span>Minimum Distance : <span>5</span> KM </span><br/>
+                                <span>Minimum Charge : <span>Rs.</span> 150 </span><br/>
+                                <span>Per KM charge : <span>Rs.</span> 50 </span><br/>
+                            </td>
+                            <td>
+                                <span>Cash Earnings : <span>Rs.</span> 0.00 </span><br/>
+                                <span>Card Earnings : <span>Rs.</span> 0.00 </span><br/>
+                                <span>Total Earnings : <span>Rs.</span> 0.00 </span><br/>
+                                <span>Payable Commission : <span>Rs.</span> 0.00 </span><br/>
+                            </td>
+                            <td>
+                                <span class="text-center"><i class="bi bi-x-square text-dark fs-5"></i></span>
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+<!--            </div>-->
+<!--            </div>-->
+
+        <!--        home-->
+      </div>
+</div>
+
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/popper.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
